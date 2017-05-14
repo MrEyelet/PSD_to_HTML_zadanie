@@ -1,1 +1,3 @@
 # PSD_to_HTML_zadanie
+
+Mam troszkę doświadczenia niekomercyjnego w cięciu layoutów. Do tej powry wykorzystywałem Avocode jednak skończył mi się dostep do tej platformy. Nie mam również PS więc starałem się odtworzyć stronkę z .jpg wykorzystując paczkę z asetami. Mam nadzieję, że stronka jest zbliżona do oryginału. Wykorzytałem własny grid oraz użyłem Sass. Starałem się aby stronka była w pełni responsywna. Wykonanie zadania zajeło mi około 4-5h.

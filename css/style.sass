@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700&subset=latin-ext')
+/*font*/
+$Lato: 'Lato', sans-serif
+/*colors*/
+$text: #323232
+$akcent: #30306d
+$background: #e5ceae 
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+	font-family: $Lato
+
+h1,h2,h3,h4,h5,h6,p 
+	font-family: $Lato
+
+/*GRID*/
+.container
+	max-width: 960px
+	width: 100%
+	margin: 0 auto
+
+/*CLEARFIX*/
+.clearfix::before,
+.clearfix::after
+	content: " "
+	display: table
+	clear: both
+
+/*FOR ALL COLUMNS*/
+
+[class*="col-"]
+	float: left
+	min-height: 1px
+	padding: 25px
+
+/*12 COLUMNS GRID*/
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+/*gallery grid*/
+.col-gallery
+	width: 12.5%
+header
+	text-align: center
+	h1
+		color: $akcent
+		border-bottom: 2px solid $background
+		margin: 0
+		padding: 50px
+		font-weight: bold
+	p
+		margin: 0
+		padding-top: 40px
+		display: inline-block
+		line-height: 50px
+		transform: translateY(-15px)
+		font-size: 16px
+	img
+		display: inline-block
+		margin-right: 20px
+		width: 40px
+		height: 40px
+	span
+		font-weight: bold
+
+.form
+	background: $background
+	text-align: center
+	min-height: 300px
+	h2
+		color: $text
+		margin-bottom: 35px
+		font-weight: 300
+	input
+		width: 400px
+		padding: 10px
+		margin-right: 80px
+		border: solid 1px #b9b9b9
+		box-shadow: 2px 2px 20px rgba(0,0,0,0.35)
+	label
+		margin-right: 35px
+	a 
+		text-transform: uppercase
+		text-decoration: none
+		color: $text
+		&:hover
+			text-decoration: underline
+	.btn 
+		background: $akcent
+		border: 1px solid $akcent
+		width: 200px
+		padding: 10px
+		color: white
+		font-weight: 700
+		margin: 0 0 30px 0
+		text-transform: uppercase
+		transition: .5s
+		&:hover
+			background: none
+			cursor: pointer
+			color: $akcent
+/*section with all imgs*/
+.brands-celebs-tv
+	img
+		width: 100%
+	h3
+		margin: 0
+		font-size: 16px
+		line-height: 75px
+		color: $text
+	.col-gallery
+		padding: 5px
+
+/*Media queries*/
+@media(max-width: 959px)
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	/*gallery grid*/
+	.col-m-gallery
+		width: 25%
+
+	header
+		.col-m-6:nth-of-type(3)
+			display: block
+			float: none
+			margin: 0 auto
+	.brands-celebs-tv
+		.col-m-12
+			padding: 15px 0
+			img:nth-of-type(1)
+			img:nth-of-type(3)
+				margin-bottom: 25px
+		h3
+			line-height: 14px
+			margin-left: 10px
+
+@media(max-width: 620px)
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+	.form
+		label
+			margin-right: 0
+		input
+			width: 100%
+			margin-right: 0
